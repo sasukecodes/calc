@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+body {
+  background: #ebebeb;
+  width: 90vw;
+  height: 100vh;
+  font-family: "Share Tech Mono";
+  position: fixed;
+  /* overflow:hidden; */
+  /* overflow-x: scroll; */
+}
+
+.App {
+  height: 690px;
+  width: 95vw;
+  perspective: 0 200px;
+  background: #ebebeb;
+  /* padding: 10vh 0px; */
+  text-align: center;
+  touch-action: manipulation;
+  margin: 0 auto;
+}
+
+.Display {
+  background: #2b293d;
+  color: #59c3c3;
+  text-shadow: 0 0 5px rgba(89, 195, 195, 0.5);
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  align-items: center;
+  padding: 0 2vw;
+  /* box-sizing: border-box; */
+  height: 20%;
+  width: 87vw;
+  overflow: hidden;
+  font-size: 24px;
+  /* position: relative; */
+  border: 5px outset blue;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .App {
+    height: 690px;
+    width: 350px;
+    perspective: 0 200px;
+    background: #ebebeb;
+    padding: 10vh 0px;
+    margin: 0 auto;
+  }
+
+  .Display {
+    background: #2b293d;
+    color: #59c3c3;
+    text-shadow: 0 0 5px rgba(89, 195, 195, 0.5);
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    align-items: center;
+    padding: 0 2vw;
+    /* box-sizing: border-box; */
+    height: 20%;
+    max-width: 275px;
+    /* min-width: 275px; */
+    overflow: hidden;
+    font-size: 24px;
+    position: relative;
+    border: 5px outset blue;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  body {
+    background: #ebebeb;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Share Tech Mono";
+    position: fixed;
+  }
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 65%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border: solid #2b293d;
+  border-radius: 10px;
+}
+
+.Button {
+  display: flex;
+}
